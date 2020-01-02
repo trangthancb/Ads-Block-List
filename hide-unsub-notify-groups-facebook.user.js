@@ -8,6 +8,8 @@
 // @match        https://www.facebook.com/*
 // @grant        GM_setValue
 // @grant        GM_getValue
+// @updateURL    https://github.com/trangthancb/Ads-Block-List/raw/master/hide-unsub-notify-groups-facebook.user.js
+// @downloadURL  https://github.com/trangthancb/Ads-Block-List/raw/master/hide-unsub-notify-groups-facebook.user.js
 // ==/UserScript==
 
 (function() {
