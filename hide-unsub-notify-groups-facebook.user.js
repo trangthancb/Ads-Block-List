@@ -39,7 +39,7 @@
         }).done(function(data) {
             var body = JSON.parse(data.slice(9));
             $.each( body.payload.nodes, function( index, value ) {
-                if(value.notif_type == 'group_post_approval_request' || value.notif_type == 'group_r2j' || value.notif_type == 'group_report_to_admin'  || value.notif_type == 'group_highlights' ) {
+                if(value.notif_type == 'group_post_approval_request' || value.notif_type == 'commerce_interesting_product' || value.notif_type == 'group_r2j' || value.notif_type == 'group_report_to_admin'  || value.notif_type == 'group_highlights' ) {
                     var actions = value.notif_option_sets.edges[0].node.notif_options.edges;
                     if(actions.length == 2) {
                         for (var i = 0; i < actions.length; i++) {
