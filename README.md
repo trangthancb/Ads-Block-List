@@ -1,6 +1,6 @@
-# Ads-Block-List
+# Ads-Block-List (có thể cài đặt cho chrome, firefox,...)
 
-Cài đặt chương trình chặn Ads (có thể cài đặt cho chrome, firefox,...)
+Cài đặt chương trình chặn Ads 
 
 https://github.com/gorhill/uBlock#ublock-origin
 hoặc
@@ -8,6 +8,6 @@ https://chrome.google.com/webstore/detail/adblock-%E2%80%94-best-ad-blocker/gigh
 
 
 Cài đặt Tampermonkey
-https://chrome.google.com/webstore/detail/tampermonkey/dhdgffkkebhmkfjojejmpbldmpobfkfo
+https://www.tampermonkey.net/
 
 
