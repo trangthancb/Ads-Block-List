@@ -10,7 +10,7 @@ https://chrome.google.com/webstore/detail/tampermonkey/dhdgffkkebhmkfjojejmpbldm
 
 # Firefox:
 Cài đặt chương trình chặn Ads 
-https://addons.mozilla.org/en-US/firefox/addon/ublock-origin/
+https://addons.mozilla.org/en-US/firefox/addon/adblock-for-firefox/
 
 Cài đặt Tampermonkey
 https://addons.mozilla.org/en-US/firefox/addon/tampermonkey/
