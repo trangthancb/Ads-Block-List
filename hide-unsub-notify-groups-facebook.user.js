@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name         Gỡ - Tắt thông báo Groups Facebook
 // @namespace    http://tampermonkey.net/
-// @version      0.1
+// @version      0.2
 // @description  Hỗ trợ chặn notify groups facebook
 // @author       https://github.com/trangthancb
 // @require      http://code.jquery.com/jquery-3.3.1.min.js
@@ -16,9 +16,13 @@
     'use strict';
     $(document).ready(function() {
         var body = document.documentElement.innerHTML;
-        var fb_dtsg = /"token":"([^"]+)"/.exec(body)[1];
-        var c_user = /"ACCOUNT_ID":"([^"]+)"/.exec(body)[1];
-        setInterval(function () { getNotify(fb_dtsg, c_user); }, 2000);
+        var token = /"token":"([^"]+)"/.exec(body);
+        var account_id = /"ACCOUNT_ID":"([^"]+)"/.exec(body);
+        if(token !== null && account_id !== null) {
+            var fb_dtsg = token[1];
+            var c_user = account_id[1];
+            setInterval(function () { getNotify(fb_dtsg, c_user); }, 2000);
+        }
     });
     function getNotify(fb_dtsg, c_user) {
         var time = Math.floor(Date.now() / 1e3);
